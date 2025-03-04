@@ -51,7 +51,9 @@ function Paciente() {
     <div className="container mt-4">
       {/* Encabezado */}
       <div className="d-flex justify-content-between align-items-center mb-3">
-        <h2 className="fw-bold">📋 Lista de Pacientes</h2>
+        <h2 className="fw-bold">
+          <span className="text-primary">👥</span> Gestión de Pacientes
+        </h2>
         
         <div>
           {/* Botón para cambiar vista */}
