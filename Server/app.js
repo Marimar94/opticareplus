@@ -12,6 +12,7 @@ import pacienteRoutes from "./routes/Paciente.Routes.js";
 import inventarioRoutes from "./routes/Inventario.Routes.js";
 import preciosLentesRoutes from "./routes/PreciosLentes.Routes.js";
 import preciosLentesContactoRoutes from "./routes/PreciosLentesContacto.Routes.js";
+import historial_MaterialRoutes from "./routes/Historial_Material.Routes.js";
 
 const app = express();
 
@@ -31,5 +32,6 @@ app.use("/Paciente", pacienteRoutes); // Rutas para Paciente para la api (front)
 app.use("/Inventario", inventarioRoutes);
 app.use("/PreciosLentes", preciosLentesRoutes);
 app.use("/PreciosLentesContacto", preciosLentesContactoRoutes);
+app.use("/Historial_Material", historial_MaterialRoutes);
 
 export default app;

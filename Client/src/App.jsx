@@ -16,6 +16,7 @@ import Paciente from './pages/Superadmin/Paciente';
 import Inventario from './pages/Superadmin/Inventario';
 import PreciosLentes from './pages/Superadmin/PreciosLentes';
 import PreciosLentesContacto from './pages/Superadmin/PreciosLentesContacto';
+import Histrorial_Material from './pages/Superadmin/Histrorial_Material';
 
 function App() {
   return(
@@ -28,6 +29,7 @@ function App() {
       <Route path='/Inventario' element={<Inventario/>}> </Route>
       <Route path='/PreciosLentes' element={<PreciosLentes/>}> </Route>
       <Route path='/PreciosLentesContacto' element={<PreciosLentesContacto/>}> </Route>
+      <Route path='/Materiales' element={<Histrorial_Material/>}> </Route> 
       {/*---------------------------------RUTAS EJEMPLOS--------------------------------- */}
       <Route path="/Edificio" element={<Edificio />} />
       <Route path="/Aula" element={<Aula />} />
