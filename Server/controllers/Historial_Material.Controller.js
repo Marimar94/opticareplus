@@ -1,6 +1,6 @@
 import { db } from "../db/connection.js";
 
-// Obtener todos los materiales
+// Obtener todos los materiales k
 export const getHistorial_Material = async (req, res) => {
   try {
     const [rows] = await db.query("SELECT * FROM Historial_Material");
