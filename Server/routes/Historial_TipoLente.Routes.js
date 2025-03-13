@@ -6,7 +6,7 @@ const router = Router();
 
 router.get("/", getHistorial_TipoLente);
 router.post("/create", createHistorial_TipoLente );
-router.put("/update/:idHistorial_TipoLente", updateHistorial_TipoLente);
-router.delete("/delete/:idHistorial_TipoLente", deleteHistorial_TipoLente);
+router.put("/update/:idHistorialTipoLente", updateHistorial_TipoLente);
+router.delete("/delete/:idHistorialTipoLente", deleteHistorial_TipoLente);
 
 export default router;

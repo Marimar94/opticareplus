@@ -44,6 +44,8 @@ function OffcanvasNavbar() {
                 <Nav.Link as={Link} to="/PreciosLentes">Precios Lentes</Nav.Link>
                 <Nav.Link as={Link} to="/PreciosLentesContacto">Precios Lentes de Contacto</Nav.Link>
                 <Nav.Link as={Link} to="/Materiales">Materiales</Nav.Link>
+                <Nav.Link as={Link} to="/TiposLentes">Tipos de Lentes</Nav.Link>
+                <Nav.Link as={Link} to="/Optometrista">Optometrista</Nav.Link>
               </Nav>
 
               <hr />

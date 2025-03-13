@@ -14,6 +14,7 @@ import preciosLentesRoutes from "./routes/PreciosLentes.Routes.js";
 import preciosLentesContactoRoutes from "./routes/PreciosLentesContacto.Routes.js";
 import historial_MaterialRoutes from "./routes/Historial_Material.Routes.js";
 import historial_TipoLenteRoutes from "./routes/Historial_TipoLente.Routes.js";
+import optometristaRoutes from "./routes/Optometrista.Routes.js";
 
 const app = express();
 
@@ -35,5 +36,6 @@ app.use("/PreciosLentes", preciosLentesRoutes);
 app.use("/PreciosLentesContacto", preciosLentesContactoRoutes);
 app.use("/Historial_Material", historial_MaterialRoutes);
 app.use("/Historial_TipoLente", historial_TipoLenteRoutes);
+app.use("/Optometrista", optometristaRoutes);
 
 export default app;

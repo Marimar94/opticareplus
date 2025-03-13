@@ -37,7 +37,6 @@ function Historial_Material() {
     );
   };
 
-
   const handleUpdate = () => {
     updateHistorial_Materialjs(
       selectedHistorial_Material.idHistorialMaterial,
@@ -98,7 +97,6 @@ function Historial_Material() {
         <table className="table table-hover table-striped">
           <thead className="table-dark">
             <tr>
-              <th>ID</th>
               <th>Material</th>
               <th>Acciones</th>
             </tr>
@@ -107,7 +105,6 @@ function Historial_Material() {
             {filteredData.length > 0 ? (
               filteredData.map((Historial_Material) => (
                 <tr key={Historial_Material.idHistorialMaterial}>
-                  <td>{Historial_Material.idHistorialMaterial}</td>
                   <td>{Historial_Material.nombre}</td>
                   <td>
                     <button
