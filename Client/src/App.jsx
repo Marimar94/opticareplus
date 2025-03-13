@@ -19,6 +19,7 @@ import PreciosLentesContacto from './pages/Superadmin/PreciosLentesContacto';
 import Historial_Material from './pages/Superadmin/Historial_Material';
 import Historial_TipoLente from './pages/Superadmin/Historial_TipoLente';
 import Optometrista from './pages/Superadmin/Optometrista';
+import HistorialClinico from './pages/Superadmin/HistorialClinico';
 
 function App() {
   return(
@@ -34,6 +35,7 @@ function App() {
       <Route path='/Materiales' element={<Historial_Material/>}> </Route> 
       <Route path='/TiposLentes' element={<Historial_TipoLente/>}> </Route>
       <Route path='/Optometrista' element={<Optometrista/>}> </Route>
+      <Route path='/HistorialClinico' element={<HistorialClinico/>}> </Route>
       
       {/*---------------------------------RUTAS EJEMPLOS--------------------------------- */}
       <Route path="/Edificio" element={<Edificio />} />
