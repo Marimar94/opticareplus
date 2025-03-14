@@ -2,6 +2,7 @@ import '../../assets/css/App.css'; // No se mueve
 import { useState, useEffect } from 'react'; // No se mueve
 import 'bootstrap/dist/css/bootstrap.min.css'; // No se mueve
 import { FaUserCircle, FaThLarge, FaList, FaEdit, FaTrash, FaPlus } from "react-icons/fa"; // Iconos
+import { useNavigate } from 'react-router-dom'; // Nuevo import para navegación
 
 import { getPacientejs, createPacientejs, updatePacientejs, deletePacientejs } 
 from '../../assets/js/Paciente.js';
@@ -28,6 +29,8 @@ function Paciente() {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [searchText, setSearchText] = useState("");
   const [selectedPaciente, setSelectedPaciente] = useState(null);
+
+  const navigate = useNavigate(); // Inicializa navigate
 
   useEffect(() => { getPacientejs(setPaciente); }, []);
 
@@ -140,6 +143,15 @@ function Paciente() {
                     }}>
                       <FaTrash /> Eliminar
                     </button>
+
+     {/*  ------------------------ BOTÓN HISTORIAL ---------------- */}
+                    <button
+                         className="btn btn-info btn-sm"
+                        onClick={() => navigate(`/PacienteHistorial?idPaciente=${paciente.idPaciente}`)}
+                        >
+                        📝 Historial
+                      </button>
+
                   </div>
                 </div>
               </div>

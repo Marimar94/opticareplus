@@ -20,6 +20,8 @@ import Historial_Material from './pages/Superadmin/Historial_Material';
 import Historial_TipoLente from './pages/Superadmin/Historial_TipoLente';
 import Optometrista from './pages/Superadmin/Optometrista';
 import HistorialClinico from './pages/Superadmin/HistorialClinico';
+import PacienteHistorial from './pages/Superadmin/PacienteHistorial';
+
 
 function App() {
   return(
@@ -36,6 +38,7 @@ function App() {
       <Route path='/TiposLentes' element={<Historial_TipoLente/>}> </Route>
       <Route path='/Optometrista' element={<Optometrista/>}> </Route>
       <Route path='/HistorialClinico' element={<HistorialClinico/>}> </Route>
+      <Route path='/PacienteHistorial' element={<PacienteHistorial/>}> </Route>
       
       {/*---------------------------------RUTAS EJEMPLOS--------------------------------- */}
       <Route path="/Edificio" element={<Edificio />} />
