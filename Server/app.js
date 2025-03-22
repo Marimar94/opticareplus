@@ -12,6 +12,7 @@ import pacienteRoutes from "./routes/Paciente.Routes.js";
 import inventarioRoutes from "./routes/Inventario.Routes.js";
 import preciosLentesRoutes from "./routes/PreciosLentes.Routes.js";
 import preciosLentesContactoRoutes from "./routes/PreciosLentesContacto.Routes.js";
+import preciosRoutes from "./routes/Precios.Routes.js";
 
 //Historial Clinico
 import historial_MaterialRoutes from "./routes/Historial_Material.Routes.js";
@@ -49,5 +50,6 @@ app.use("/Optometrista", optometristaRoutes);
 app.use("/HistorialClinico", HistorialClinicoRoutes);
 app.use("/Historial_Tratamiento", Historial_TratamientoRoutes);
 app.use("/Tratamientos", Tratamientos);
+app.use ("/Precios", preciosRoutes);
 
 export default app;

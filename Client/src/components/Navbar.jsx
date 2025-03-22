@@ -49,6 +49,7 @@ function OffcanvasNavbar() {
                 <Nav.Link as={Link} to="/HistorialClinico">Historial Clinico</Nav.Link>
                 <Nav.Link as={Link} to="/Tratamientos">Tratamientos</Nav.Link>
                 <Nav.Link as={Link} to="/TratamientosHistorial">Asociar Tratamiento</Nav.Link>
+                <Nav.Link as={Link} to="/Precios">Precios</Nav.Link>
                 
               </Nav>
 

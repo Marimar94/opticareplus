@@ -23,6 +23,7 @@ import HistorialClinico from './pages/Superadmin/HistorialClinico';
 import Historial_Tratamiento from './pages/Superadmin/Historial_Tratamiento';
 import PacienteHistorial from './pages/Superadmin/PacienteHistorial';
 import Tratamientos from './pages/Superadmin/Tratamientos';
+import Precios from './pages/Superadmin/Precios';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       <Route path='/HistorialClinico' element={<HistorialClinico/>}> </Route>
       <Route path='/PacienteHistorial' element={<PacienteHistorial/>}> </Route>
       <Route path='/Tratamientos' element={<Tratamientos/>}></Route>
+      <Route path='/Precios' element={<Precios/>}></Route>
       
       {/*---------------------------------RUTAS EJEMPLOS--------------------------------- */}
       <Route path="/Edificio" element={<Edificio />} />
