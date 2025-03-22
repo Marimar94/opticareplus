@@ -19,7 +19,8 @@ export const getHistorial_Materialjs = async (setHistorial_Materialjs) => {
 
 
 export const createHistorial_Materialjs = async (nombre, setShowModal, getHistorial_Materialjs) => {
-    try {
+  console.log("Llegando a js", {nombre });   
+  try {
       await createHistorial_Material(nombre);
       getHistorial_Materialjs();
       Swal.fire({
